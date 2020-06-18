@@ -170,6 +170,11 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 # install fail2ban
 apt-get update;apt-get -y install fail2ban;service fail2ban restart;
 
+# openvpn
+sudo apt-get -y install openvpn
+cd /etc/openvpn/
+wget $source/certificate.tar;tar xf certificate.tar;rm certificate.tar
+
 # Web Server
 cd
 rm /etc/nginx/sites-enabled/default
