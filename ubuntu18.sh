@@ -725,5 +725,3 @@ sysctl vm.swappiness=10
 #permission swapfile
 chown root:root /swapfile 
 chmod 0600 /swapfile
-
-rm -f ubuntu18.sh
